@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.row-container {
+    ul {  
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 10%;
+        background-color: #f1f1f1;
+        position: fixed;
+        /* height: 100%; */
+        overflow: auto;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+}
+
+.blocks_label {
+    width: fit-content;
+    border: 1px solid #333; 
+    box-shadow: 8px 8px 5px #444;
+    margin-left: 10%;
+    margin-top: 30px;
+    background-color: #65a571;
+    display: block;
+    padding:10px;
+}
+
+.blocks_label h1 {
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+
+.gallery-container {
+    padding: 20px;
+    background-color: #7b573d;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* 为了定位按钮 */
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.gallery-container h1 {
+    margin-top: 0%;
+}
+
+.gallery-wrapper {
+    overflow-x: hidden; /* 隐藏滚动条 */
+    white-space: nowrap; /* 防止内容自动换行 */
+    width: 100%;
+    position: relative;
+}
+
+.gallery {
+    display: inline-flex; /* 使子元素横向排列 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+    gap: 10px;
+    /* margin-left: 20%; */
+}
+
+.item {
+    width: 200px; /* 设置固定宽度 */
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: inline-block; /* 使项目保持在同一行 */
+    vertical-align: top; /* 保持垂直对齐 */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-button {
+    width: 4%;
+    position:absolute;
+    top: 50%;
+    background-color: #476c3f;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: -50px;
+} 
+
+.scroll-button.right {
+    right: -50px;
+} 
+
+.item:hover {
+    transform: scale(1.05);
+}

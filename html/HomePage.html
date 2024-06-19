@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../JS/videoChange.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="https://www.minecraft.net/zh-hans" class="navbar-brand">
+                <img src="../image/Minecraft.svg" alt="Logo" class="navbar-logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="HomePage.html">主页</a></li>
+                <li><a href="TimeLine.html">时间线</a></li>
+                <li><a href="Blocks.html">方块/物品</a></li>
+                <li><a href="Picture.html">图片</a></li>
+                <li><a href="Login.html">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="gameVersion">
+        <div class="gameVersion-wanner">
+            <div class="gameVersion-wanner-top">
+                <div style="margin-bottom: 15px;font-size: 56px">
+                    <p>Minecraft 游戏与其支持平台</p>
+                </div>
+            </div>
+            <div class="gameVersion-wanner-three">
+                <div class="gameVersion-wanner-three-item">
+                    <div><img src="../image/version/Minecraft.png" alt=""></div>
+                    <div>
+                        <h3 class="item-one">Minecraft</h3>
+                        <p class="item-three">沙盒生存，探险游戏，单人游戏 + 多人游戏</p>
+                    </div>
+                </div>
+                <div class="gameVersion-wanner-three-item">
+                    <div><img src="../image/version/MinecraftDungeons.png" alt=""></div>
+                    <div>
+                        <h3 class="item-one">Minecraft Dungeons</h3>
+                        <p class="item-three">地牢爬行，动作角色扮演类游戏，单人游戏 + 多人游戏</p>
+                    </div>
+                </div>
+                <div class="gameVersion-wanner-three-item">
+                    <div><img src="../image/version/MinecraftLegends.png" alt=""></div>
+                    <div>
+                        <h3 class="item-one">Minecraft Legends</h3>
+                        <p class="item-three">动作角色扮演类游戏，策略游戏，单人游戏 + 多人游戏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-method">
+        <h2 class="game-method-h">游戏玩法预告片</h2>
+        <div class="game-method-items">
+            <div class="item-one">
+                <ul>
+                    <li id="i1" class="item-one-button" onclick="videoShow1()"
+                        style="background-color: rgb(61, 57, 56)">
+                        <div id="m1"><img src="../image/version/dirtblock.jpg" alt="" width="48px"></div>
+                        <p class="item-one-button-t">Minecraft</p>
+                    </li>
+                    <li id="i2" class="item-one-button" onclick="videoShow2()"
+                        style="background-color: rgb(38, 36, 35);">
+                        <div><img src="../image/version/a2.png" alt="" width="48px"></div>
+                        <p class="item-one-button-t">Minecraft Dungeons</p>
+                    </li>
+                    <li id="i3" class="item-one-button" onclick="videoShow3()"
+                        style="background-color: rgb(38, 36, 35)">
+                        <div><img src="../image/version/a3.webp" alt="" width="48px"></div>
+                        <p class="item-one-button-t">Minecraft Legends</p>
+                    </li>
+                    <li id="i4" class="item-one-button" onclick="videoShow4()"
+                        style="background-color: rgb(38, 36, 35)">
+                        <div><img src="../image/version/a4.avif" alt="" width="48px"></div>
+                        <p class="item-one-button-t">Minecraft Education</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-two2">
+                <video src="../video/MC-OV.webm" id="v2" width="1267px" height="851px" loop="loop" autoplay></video>
+                <div style="display:flex;margin-top: 16px">
+                    <p class="intro">一个基于游戏的学习平台，支持来自 100 多个国家/地区的成千上万名教育工作者。</p>
+                    <div class="button1" style="float: right">
+                        <div class="button2">
+                            <div class="button-text">
+                                <h4 style="color:white;">了解更多</h4>
+                                <div style="margin: 2px 0  0 13px"><img src="images/12收起.png" alt="" width="15px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
